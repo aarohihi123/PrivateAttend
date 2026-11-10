@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/.master.key
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/raw/
+sample*.png
+imposter.png
+crop_*.png
+weights/*.onnx
+weights/*.pth

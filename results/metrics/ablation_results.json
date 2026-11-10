@@ -1,0 +1,98 @@
+{
+  "ablation_1_openset": {
+    "closed_set_false_acceptance_rate": 1.0,
+    "open_set_unknown_rejection_rate": 0.465,
+    "open_set_false_alarm_rate": 0.35,
+    "open_set_known_acceptance_rate": 1.0
+  },
+  "ablation_2_liveness": {
+    "without_pad_spoof_vulnerability_pct": 100.0,
+    "with_pad_apcer": 0.0,
+    "with_pad_bpcer": 0.0,
+    "with_pad_acer": 0.0
+  },
+  "ablation_3_privacy": {
+    "plaintext_storage_confidentiality": "None (Subject to Database Exfiltration)",
+    "protected_cipher": "AES-256-GCM / Fernet + Cancelable Orthogonal Projection",
+    "mean_encryption_us": 36.629530000027444,
+    "mean_decryption_us": 55.97087999831274,
+    "storage_expansion_pct": 38.0859375,
+    "cancelable_biometrics": {
+      "max_score_diff_raw_vs_protected": 8.344650268554688e-07,
+      "genuine_right_key_mean": 0.6024426957033575,
+      "genuine_wrong_key_mean": -0.00685077530448325,
+      "genuine_wrong_key_std": 0.04326992064963574,
+      "revoked_key_mean": -0.006091793618397787,
+      "unlinkability_mean": -0.006491484634461813,
+      "unlinkability_std": 0.040359090189276255,
+      "theoretical_chance_std": 0.044194173824159216
+    }
+  },
+  "ablation_4_multisample": {
+    "single_sample_variance": 0.015261644535796941,
+    "multi_sample_variance": 0.003035120189784657,
+    "variance_reduction_pct": 80.11275794908188,
+    "umdface_k_sweep_raw": {
+      "1": {
+        "eer_mean_pct": 5.583333333333333,
+        "eer_std_pct": 1.6757261795405585,
+        "rank1_mean_pct": 92.75,
+        "rank1_std_pct": 1.6996731711975979,
+        "gar_at_035_pct": 76.91666666666667,
+        "sfa_at_035_pct": 0.0
+      },
+      "3": {
+        "eer_mean_pct": 4.716101694915253,
+        "eer_std_pct": 0.7509443499823444,
+        "rank1_mean_pct": 94.41666666666666,
+        "rank1_std_pct": 0.772801541291311,
+        "gar_at_035_pct": 91.33333333333333,
+        "sfa_at_035_pct": 0.0
+      },
+      "5": {
+        "eer_mean_pct": 3.5988700564971743,
+        "eer_std_pct": 0.4297558649030367,
+        "rank1_mean_pct": 94.75,
+        "rank1_std_pct": 0.8579691784155865,
+        "gar_at_035_pct": 92.16666666666666,
+        "sfa_at_035_pct": 0.0
+      }
+    },
+    "umdface_k_sweep_cleaned": {
+      "1": {
+        "eer_mean_pct": 0.8654698581560268,
+        "eer_std_pct": 0.525205168999492,
+        "rank1_mean_pct": 99.16666666666667,
+        "rank1_std_pct": 0.41666666666666285,
+        "gar_at_035_pct": 86.35416666666666,
+        "sfa_at_035_pct": 0.0
+      },
+      "3": {
+        "eer_mean_pct": 0.3058510638297883,
+        "eer_std_pct": 0.1908925412554845,
+        "rank1_mean_pct": 99.89583333333333,
+        "rank1_std_pct": 0.2083333333333371,
+        "gar_at_035_pct": 98.125,
+        "sfa_at_035_pct": 0.0
+      },
+      "5": {
+        "eer_mean_pct": 0.07092198581560286,
+        "eer_std_pct": 0.04368440457541451,
+        "rank1_mean_pct": 100.0,
+        "rank1_std_pct": 0.0,
+        "gar_at_035_pct": 98.85416666666666,
+        "sfa_at_035_pct": 0.0
+      }
+    }
+  },
+  "ablation_5_temporal": {
+    "single_frame_false_rejection_present": true,
+    "temporally_smoothed_score": 0.726,
+    "temporal_smoothing_stabilized": true
+  },
+  "ablation_6_zero_retention": {
+    "stored_raw_images_bytes": 0,
+    "privacy_compliance": "GDPR Art. 9 Data Minimization Compliant",
+    "retention_policy_hours": 0
+  }
+}
